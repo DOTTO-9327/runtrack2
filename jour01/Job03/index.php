@@ -21,9 +21,9 @@
     <table>
         <thead>
             <tr>
-                <td>Type</td>
-                <td>Nom</td>
-                <td>Valeur</td>
+                <th>Type</th>
+                <th>Nom</th>
+                <th>Valeur</th>
             </tr>
         </thead>
             
