@@ -10,7 +10,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="style.css">
     <table>
         <thead>
             <tr>
@@ -29,27 +30,27 @@
             
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><!-- type -->boolean</td>
+                <td><!--nom-->booleen</td>
+                <td><!--valeur-->true</td>
             </tr>
 
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?php echo gettype($age); ?></td>
+                <td>age</td>
+                <td><?php echo $age;?></td>
             </tr>
 
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?php echo gettype($titre); ?></td>
+                <td>titre</td>
+                <td><?php echo $titre; ?></td>
             </tr>
 
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><?php echo gettype($float); ?></td>
+                <td>float</td>
+                <td><?php echo $float; ?></td>
             </tr>
         </tbody>
     </table>
