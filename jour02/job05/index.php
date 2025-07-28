@@ -37,6 +37,7 @@ for ($i = 2; $i <= 1000; $i++) // dans cette boucle on remarque clairement que l
     for ($j = 2; $j < $i; $j++) // cette nouvelle boucle veut dire que'on commence maintenant avec $j = 2 et tant que $j est inférieur à $i, continue mais fait $j++ à chaque tour de boucle pour tester le diviseur suivant.
     
     // jusqu'ici nous avons pas encore atteind notre objectif qui est de tester si un autre nombre que "1" et "$i" peut diviser "$i". 
+    
 
         {
         if ($i % $j == 0) // nous nous posons la question ici de savoir si "$i" se divise exacement par "$j" ? étant donné que nous savons tous que le symbole "%" veut dire "modulus" et donne le reste de la division. Néanmoins, si le reste de notre "if" donne "0", alors $j a un diviseur autre que "1" ou "$i". ce qui veut dire que "$i"  n'est pas un nombre premier. 
