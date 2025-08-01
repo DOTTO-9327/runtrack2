@@ -12,9 +12,9 @@
 //          
 
 //  Parcourir chaque nombre entre 0 et 1337
-for ($i = 0; $i <= 1337; $i = $i++) 
+for ($i = 0; $i <= 1337; $i++) 
     {  //       Si le nombre est egal à 42 ALORS
-        if ($i == 42) 
+        if ($i === 42) 
             {  //      Afficher le nombre en gras  et souligné et aller a la ligne
                 echo "<b><u>$i</u></b><br/>";
     //      SINON 
