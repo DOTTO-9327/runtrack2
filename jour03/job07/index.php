@@ -32,6 +32,4 @@ echo $newStr;
 
 
 
-
-
 ?>
