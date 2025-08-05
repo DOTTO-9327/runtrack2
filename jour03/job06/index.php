@@ -15,14 +15,12 @@
 // créons une variable "$str" avec la phrase. 
 
 $str= "Les choses que l'on possede finissent par nous posseder.";
-$i=0; 
+
 // nous allons à présent céer une boucle "for" qui va parcourir l'ensemble de la chaîne de caractère et les afficher à l'envers
 
-for($i=0; isset($str[$i]); $i--) 
-    
+for($i=-1; isset($str[$i]); $i--) 
 {
     echo $str[$i]; // afficher "$i"
 }
-
 
 ?>

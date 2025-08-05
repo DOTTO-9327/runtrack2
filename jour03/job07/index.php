@@ -13,17 +13,18 @@
 
 $str = "Certaines choses changent, et d'autres ne changeront jamais."; 
 
-$newStr = ""; // on crée une nouvelle chaîne vide
+$newStr = ""; // on crée une nouvelle chaîne vide pour récupérer la première lettre "C" à la fin . 
 
-for ($i = 0; isset($str[$i + 1]); $i++) //  Cette boucle for dit : Commence à la position 0.Tant qu’il existe un caractère à la position $i + 1, continue. Avance de 1 à chaque tour On utilise isset($str[$i + 1]) pour vérifier si le caractère suivant existe (comme demander "Est-ce qu'il y a encore une lettre après celle-ci ?").
+for ($i = 1; isset($str[$i]); $i++) //  Cette boucle for dit : Commence à la position 0.Tant qu’il existe un caractère à la position $i + 1, continue. Avance de 1 à chaque tour On utilise isset($str[$i + 1]) pour vérifier si le caractère suivant existe (comme demander "Est-ce qu'il y a encore une lettre après celle-ci ?").
  
 
 {
-    $newStr =  $newStr.$str[$i + 1]; // on ajoute la lettre suivante à la nouvelle chaîne
+    $newStr =  $newStr . $str[$i]; // on ajoute la lettre suivante à la nouvelle chaîne
+    // on utilise le "." pour incrémenter la chaîne de caractère. on utilise souvent "+" s'il s'agit des nombres.
 }
 
 // À la fin, on ajoute la première lettre à la fin de la chaîne
-$newStr = $newStr.$str[0];
+$newStr = $newStr . $str[0];
 
 echo $newStr;
 

@@ -45,9 +45,11 @@
 $str = "On n'est pas le meilleur quand on le croit mais quand on le sait";
 
 // Étape 2 : tableau dictionnaire pour stocker les résultats
-$dic = ["voyelles" => ['a', 'e', 'i', 'o', 'u', 'y'], // liste des voyelles
-"consonnes" => ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"] // liste de consonnes
- ];
+$dic = 
+[
+    "voyelles" => ['a', 'e', 'i', 'o', 'u', 'y', 'O'], // liste des voyelles
+    "consonnes" => ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"] // liste de consonnes
+];
 
  // Etape 3 : nous allons à présent créer les variables de compteur
  $nbrvoyelles = 0;
@@ -57,14 +59,23 @@ $dic = ["voyelles" => ['a', 'e', 'i', 'o', 'u', 'y'], // liste des voyelles
 // Étape 4 : parcourir chaque caractère avec une boucle "for"
 
 for ($i = 0; isset($str[$i]); $i++) 
+{
+    foreach ($dic["consonnes"] as $conx) 
     {
-        foreach ($dic["consonnes"] as $conx) 
-        {
-            if ($str[$i]=== $conx)
-                $nbrconsonnes++; 
 
-        }
+        //-------debug pour compréhension---------// 
+        // echo "L'iteration de la boucle for est $i et correspond à la lettre " . $str[$i] ."<br>";
+        // echo "Je parcours mon tableau foreach et sa lettre actuel est $conx <br>"; 
+        // echo "Je vérifie si " . $str[$i] . " vaut $conx <br><br>";
+        
+        if ($str[$i]=== $conx)
+            $nbrconsonnes++; 
+
     }
+    
+}
+// die();
+
 
 
 for ($j = 0; isset($str[$j]); $j++) 
